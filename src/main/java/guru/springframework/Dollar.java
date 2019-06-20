@@ -1,17 +1,14 @@
 package guru.springframework;
 
-/**
- * Created by jt on 2018-10-04.
- */
-public class Dollar {
+public class Dollar extends Money {
 
-    int amount;
 
     public Dollar(int amount) {
         this.amount = amount;
     }
 
-    Dollar times( int multiplier) {
+    Dollar times(int multiplier) {
         return new Dollar(amount * multiplier);
     }
+
 }
